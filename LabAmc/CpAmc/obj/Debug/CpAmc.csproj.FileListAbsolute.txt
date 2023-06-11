@@ -20,3 +20,6 @@ D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\Cp
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.csproj.CopyComplete
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.exe
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.pdb
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmAutenticacion.resources
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmCliente.resources
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmVendedor.resources

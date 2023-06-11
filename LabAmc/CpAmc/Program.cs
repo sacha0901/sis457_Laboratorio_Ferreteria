@@ -16,7 +16,7 @@ namespace CpAmc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmArticulo());
+            Application.Run(new FrmAutenticacion());
         }
     }
 }

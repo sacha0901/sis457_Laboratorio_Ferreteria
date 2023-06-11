@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace CpAmc
 {
-    public partial class Form1 : Form
+    public partial class FrmVendedor : Form
     {
-        public Form1()
+        public FrmVendedor()
         {
             InitializeComponent();
         }
