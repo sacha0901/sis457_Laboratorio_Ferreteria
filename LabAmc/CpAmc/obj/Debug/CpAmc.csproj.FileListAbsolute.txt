@@ -23,3 +23,9 @@ D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\Cp
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmAutenticacion.resources
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmCliente.resources
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmVendedor.resources
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.4.5.2.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.Ribbon.4.5.2.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.4.5.2.xml
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.Ribbon.4.5.2.xml
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmPrincipal.resources
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.exe.licenses
