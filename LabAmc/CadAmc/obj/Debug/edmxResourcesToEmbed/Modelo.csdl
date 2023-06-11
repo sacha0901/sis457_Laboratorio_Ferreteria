@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="LabAmcModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Articulo">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="codigo" Type="String" MaxLength="10" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="descripcion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="precio" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="unidad" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="existenciaMaxima" Type="Int32" Nullable="false" />
+    <Property Name="existenciaMinima" Type="Int32" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Detalle" Relationship="Self.fk_Detalle_Articuo" FromRole="Articulo" ToRole="Detalle" />
+  </EntityType>
+  <EntityType Name="Cliente">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoPaterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoMaterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="cedulaIdentidad" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="direccion" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+    <Property Name="limiteCredito" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="FechaAsig" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="idVendedor" Type="Int32" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Vendedor" Relationship="Self.fk_Cliente_Vendedor" FromRole="Cliente" ToRole="Vendedor" />
+    <NavigationProperty Name="Factura" Relationship="Self.fk_Factura_Cliente" FromRole="Cliente" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Detalle">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idFactura" Type="Int32" Nullable="false" />
+    <Property Name="idArticulo" Type="Int32" Nullable="false" />
+    <Property Name="Cantidad" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Articulo" Relationship="Self.fk_Detalle_Articuo" FromRole="Detalle" ToRole="Articulo" />
+    <NavigationProperty Name="Factura" Relationship="Self.fk_Detalle_Factura" FromRole="Detalle" ToRole="Factura" />
+  </EntityType>
+  <EntityType Name="Factura">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="fecha" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="idVendedor" Type="Int32" Nullable="false" />
+    <Property Name="idCliente" Type="Int32" Nullable="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Cliente" Relationship="Self.fk_Factura_Cliente" FromRole="Factura" ToRole="Cliente" />
+    <NavigationProperty Name="Detalle" Relationship="Self.fk_Detalle_Factura" FromRole="Factura" ToRole="Detalle" />
+    <NavigationProperty Name="Vendedor" Relationship="Self.fk_Factura_Vendedor" FromRole="Factura" ToRole="Vendedor" />
+  </EntityType>
+  <EntityType Name="Usuario">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="idVendedor" Type="Int32" Nullable="false" />
+    <Property Name="usuario1" Type="String" MaxLength="12" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="clave" Type="String" MaxLength="250" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Vendedor" Relationship="Self.fk_Usuario_Vendedor" FromRole="Usuario" ToRole="Vendedor" />
+  </EntityType>
+  <EntityType Name="Vendedor">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nombre" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoPaterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="apellidoMaterno" Type="String" MaxLength="20" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="sexo" Type="String" MaxLength="1" FixedLength="true" Unicode="false" Nullable="false" />
+    <Property Name="fechaContrato" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="objetivoventa" Type="Decimal" Precision="8" Scale="2" />
+    <Property Name="telefono" Type="String" MaxLength="10" FixedLength="false" Unicode="false" />
+    <Property Name="usuarioRegistro" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="fechaRegistro" Type="DateTime" Precision="3" />
+    <Property Name="registroActivo" Type="Boolean" />
+    <NavigationProperty Name="Cliente" Relationship="Self.fk_Cliente_Vendedor" FromRole="Vendedor" ToRole="Cliente" />
+    <NavigationProperty Name="Factura" Relationship="Self.fk_Factura_Vendedor" FromRole="Vendedor" ToRole="Factura" />
+    <NavigationProperty Name="Usuario" Relationship="Self.fk_Usuario_Vendedor" FromRole="Vendedor" ToRole="Usuario" />
+  </EntityType>
+  <Association Name="fk_Detalle_Articuo">
+    <End Role="Articulo" Type="Self.Articulo" Multiplicity="1" />
+    <End Role="Detalle" Type="Self.Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Articulo">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Detalle">
+        <PropertyRef Name="idArticulo" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Cliente_Vendedor">
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="1" />
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Cliente">
+        <PropertyRef Name="idVendedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Factura_Cliente">
+    <End Role="Cliente" Type="Self.Cliente" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Cliente">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="idCliente" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Detalle_Factura">
+    <End Role="Factura" Type="Self.Factura" Multiplicity="1" />
+    <End Role="Detalle" Type="Self.Detalle" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Factura">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Detalle">
+        <PropertyRef Name="idFactura" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Factura_Vendedor">
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="1" />
+    <End Role="Factura" Type="Self.Factura" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Factura">
+        <PropertyRef Name="idVendedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_Usuario_Vendedor">
+    <End Role="Vendedor" Type="Self.Vendedor" Multiplicity="1" />
+    <End Role="Usuario" Type="Self.Usuario" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Vendedor">
+        <PropertyRef Name="id" />
+      </Principal>
+      <Dependent Role="Usuario">
+        <PropertyRef Name="idVendedor" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="LabAmcEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Articulo" EntityType="Self.Articulo" />
+    <EntitySet Name="Cliente" EntityType="Self.Cliente" />
+    <EntitySet Name="Detalle" EntityType="Self.Detalle" />
+    <EntitySet Name="Factura" EntityType="Self.Factura" />
+    <EntitySet Name="Usuario" EntityType="Self.Usuario" />
+    <EntitySet Name="Vendedor" EntityType="Self.Vendedor" />
+    <AssociationSet Name="fk_Detalle_Articuo" Association="Self.fk_Detalle_Articuo">
+      <End Role="Articulo" EntitySet="Articulo" />
+      <End Role="Detalle" EntitySet="Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Cliente_Vendedor" Association="Self.fk_Cliente_Vendedor">
+      <End Role="Vendedor" EntitySet="Vendedor" />
+      <End Role="Cliente" EntitySet="Cliente" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Factura_Cliente" Association="Self.fk_Factura_Cliente">
+      <End Role="Cliente" EntitySet="Cliente" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Detalle_Factura" Association="Self.fk_Detalle_Factura">
+      <End Role="Factura" EntitySet="Factura" />
+      <End Role="Detalle" EntitySet="Detalle" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Factura_Vendedor" Association="Self.fk_Factura_Vendedor">
+      <End Role="Vendedor" EntitySet="Vendedor" />
+      <End Role="Factura" EntitySet="Factura" />
+    </AssociationSet>
+    <AssociationSet Name="fk_Usuario_Vendedor" Association="Self.fk_Usuario_Vendedor">
+      <End Role="Vendedor" EntitySet="Vendedor" />
+      <End Role="Usuario" EntitySet="Usuario" />
+    </AssociationSet>
+    <FunctionImport Name="paArticuloListar" ReturnType="Collection(LabAmcModel.paArticuloListar_Result)">
+      <Parameter Name="parametro" Mode="In" Type="String" />
+    </FunctionImport>
+  </EntityContainer>
+  <ComplexType Name="paArticuloListar_Result">
+    <Property Type="Int32" Name="id" Nullable="false" />
+    <Property Type="String" Name="codigo" Nullable="false" MaxLength="10" />
+    <Property Type="String" Name="descripcion" Nullable="false" MaxLength="30" />
+    <Property Type="Decimal" Name="precio" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="String" Name="unidad" Nullable="false" MaxLength="20" />
+    <Property Type="Int32" Name="existenciaMaxima" Nullable="false" />
+    <Property Type="Int32" Name="existenciaMinima" Nullable="false" />
+    <Property Type="String" Name="usuarioRegistro" Nullable="true" MaxLength="100" />
+    <Property Type="DateTime" Name="fechaRegistro" Nullable="true" Precision="23" />
+  </ComplexType>
+</Schema>

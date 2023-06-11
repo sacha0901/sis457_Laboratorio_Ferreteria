@@ -4,12 +4,11 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
-      <Diagram DiagramId="2c16ae31a9d44ac0a6c65cc367058941" Name="Diagram1">
+      <Diagram DiagramId="e48782ff2ed14b28bae76919a2c95eee" Name="Diagram1">
         <EntityTypeShape EntityType="LabAmcModel.Articulo" Width="1.5" PointX="5.25" PointY="7.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LabAmcModel.Cliente" Width="1.5" PointX="3" PointY="1.125" IsExpanded="true" />
         <EntityTypeShape EntityType="LabAmcModel.Detalle" Width="1.5" PointX="7.5" PointY="2.25" IsExpanded="true" />
         <EntityTypeShape EntityType="LabAmcModel.Factura" Width="1.5" PointX="5.25" PointY="2.25" IsExpanded="true" />
-        <EntityTypeShape EntityType="LabAmcModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="6.75" IsExpanded="true" />
         <EntityTypeShape EntityType="LabAmcModel.Usuario" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
         <EntityTypeShape EntityType="LabAmcModel.Vendedor" Width="1.5" PointX="0.75" PointY="2.5" IsExpanded="true" />
         <AssociationConnector Association="LabAmcModel.fk_Detalle_Articuo" ManuallyRouted="false" />

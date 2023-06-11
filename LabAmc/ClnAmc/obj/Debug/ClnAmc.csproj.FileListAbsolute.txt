@@ -1,0 +1,15 @@
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\ClnAmc.dll.config
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\ClnAmc.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\ClnAmc.pdb
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\CadAmc.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\EntityFramework.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\EntityFramework.SqlServer.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\CadAmc.pdb
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\CadAmc.dll.config
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\EntityFramework.xml
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\bin\Debug\EntityFramework.SqlServer.xml
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\obj\Debug\ClnAmc.csproj.AssemblyReference.cache
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\obj\Debug\ClnAmc.csproj.CoreCompileInputs.cache
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\obj\Debug\ClnAmc.csproj.CopyComplete
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\obj\Debug\ClnAmc.dll
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\ClnAmc\obj\Debug\ClnAmc.pdb
