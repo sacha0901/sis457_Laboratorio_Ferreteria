@@ -31,7 +31,6 @@ namespace CadAmc
         public virtual DbSet<Cliente> Cliente { get; set; }
         public virtual DbSet<Detalle> Detalle { get; set; }
         public virtual DbSet<Factura> Factura { get; set; }
-        public virtual DbSet<sysdiagrams> sysdiagrams { get; set; }
         public virtual DbSet<Usuario> Usuario { get; set; }
         public virtual DbSet<Vendedor> Vendedor { get; set; }
     

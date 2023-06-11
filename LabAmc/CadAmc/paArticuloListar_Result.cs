@@ -19,7 +19,8 @@ namespace CadAmc
         public decimal precio { get; set; }
         public string unidad { get; set; }
         public int existenciaMaxima { get; set; }
-        public int usuarioRegistro { get; set; }
+        public int existenciaMinima { get; set; }
+        public string usuarioRegistro { get; set; }
         public Nullable<System.DateTime> fechaRegistro { get; set; }
     }
 }
