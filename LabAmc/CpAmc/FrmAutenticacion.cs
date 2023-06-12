@@ -19,7 +19,12 @@ namespace CpAmc
 
         private void btnIngresar_Click(object sender, EventArgs e)
         {
-            new FrmArticulo().ShowDialog();
+            new FrmPrincipal().ShowDialog();
+        }
+
+        private void btnCerrar_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

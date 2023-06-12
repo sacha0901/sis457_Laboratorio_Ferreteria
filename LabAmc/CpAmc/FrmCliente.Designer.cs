@@ -41,6 +41,7 @@
             this.dgvLista = new System.Windows.Forms.DataGridView();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.cbxCargo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtCedulaIdentidad = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.pnlBotones.SuspendLayout();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
@@ -100,6 +100,7 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEliminar
             // 
@@ -226,6 +227,13 @@
             this.gbxDatos.TabIndex = 25;
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos del Cliente";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(500, 30);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(203, 20);
+            this.textBox1.TabIndex = 21;
             // 
             // cbxCargo
             // 
@@ -358,13 +366,6 @@
             this.lblCodigo.Size = new System.Drawing.Size(43, 13);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Cedula:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(500, 30);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(203, 20);
-            this.textBox1.TabIndex = 21;
             // 
             // FrmCliente
             // 

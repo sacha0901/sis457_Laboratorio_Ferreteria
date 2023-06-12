@@ -42,6 +42,7 @@
             this.lblTitulo = new System.Windows.Forms.Label();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
             this.dtpFechaNacimiento = new System.Windows.Forms.DateTimePicker();
+            this.cbxCargo = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
@@ -56,7 +57,6 @@
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.txtCedulaIdentidad = new System.Windows.Forms.TextBox();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.cbxCargo = new System.Windows.Forms.ComboBox();
             this.pnlBotones.SuspendLayout();
             this.gbxLista.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
@@ -100,6 +100,7 @@
             this.btnCerrar.Text = "Cerrar";
             this.btnCerrar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCerrar.UseVisualStyleBackColor = true;
+            this.btnCerrar.Click += new System.EventHandler(this.btnCerrar_Click);
             // 
             // btnEliminar
             // 
@@ -234,6 +235,15 @@
             this.dtpFechaNacimiento.Size = new System.Drawing.Size(217, 20);
             this.dtpFechaNacimiento.TabIndex = 23;
             // 
+            // cbxCargo
+            // 
+            this.cbxCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxCargo.FormattingEnabled = true;
+            this.cbxCargo.Location = new System.Drawing.Point(488, 62);
+            this.cbxCargo.Name = "cbxCargo";
+            this.cbxCargo.Size = new System.Drawing.Size(217, 21);
+            this.cbxCargo.TabIndex = 7;
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -357,15 +367,6 @@
             this.lblCodigo.Size = new System.Drawing.Size(34, 13);
             this.lblCodigo.TabIndex = 0;
             this.lblCodigo.Text = "Sexo:";
-            // 
-            // cbxCargo
-            // 
-            this.cbxCargo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxCargo.FormattingEnabled = true;
-            this.cbxCargo.Location = new System.Drawing.Point(488, 62);
-            this.cbxCargo.Name = "cbxCargo";
-            this.cbxCargo.Size = new System.Drawing.Size(217, 21);
-            this.cbxCargo.TabIndex = 7;
             // 
             // FrmVendedor
             // 
