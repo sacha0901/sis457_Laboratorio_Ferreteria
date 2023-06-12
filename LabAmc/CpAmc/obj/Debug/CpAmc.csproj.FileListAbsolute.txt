@@ -31,3 +31,4 @@ D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\Cp
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.Ribbon.4.5.2.xml
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.C1Ribbon.4.5.2.dll
 D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\bin\Debug\C1.Win.C1Ribbon.4.5.2.xml
+D:\Informatica4toSemestre\FundamentosDeProgramacion\ProyectoFerreteria\LabAmc\CpAmc\obj\Debug\CpAmc.FrmFactura.resources
