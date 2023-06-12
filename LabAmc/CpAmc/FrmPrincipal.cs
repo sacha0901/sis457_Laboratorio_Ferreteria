@@ -36,5 +36,10 @@ namespace CpAmc
         {
             new FrmCliente().ShowDialog();
         }
+
+        private void ribbonButton4_Click(object sender, EventArgs e)
+        {
+            new FrmFactura().ShowDialog();
+        }
     }
 }
