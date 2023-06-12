@@ -131,3 +131,15 @@ AS
 
 
 EXEC paArticuloListar 'Barra de Acero'
+
+SELECT * FROM Usuario;
+SELECT * FROM Vendedor;
+
+INSERT INTO Articulo(codigo,descripcion,precio,unidad,existenciaMaxima,existenciaMinima)
+VALUES ('AC45', 'Barra de Acero', 50,'kilo',3,10);
+
+INSERT INTO Vendedor(nombre,apellidoPaterno,apellidoMaterno,sexo,fechaContrato,objetivoventa,telefono)
+VALUES ('Carlos', 'Gomez', 'Sanches','H','2023-06-09',4000,'63426369');
+
+INSERT INTO Usuario(idVendedor,usuario,clave)
+VALUES (1,'sacha','123456');
