@@ -18,6 +18,9 @@ namespace CadAmc
         public int idVendedor { get; set; }
         public string usuario1 { get; set; }
         public string clave { get; set; }
+        public string usuarioRegistro { get; set; }
+        public Nullable<System.DateTime> fechaRegistro { get; set; }
+        public Nullable<bool> registroActivo { get; set; }
     
         public virtual Vendedor Vendedor { get; set; }
     }
